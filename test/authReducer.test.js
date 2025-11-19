@@ -37,7 +37,7 @@ describe('Auth Reducer Tests', () => {
 
     const state = authReducer(initialState, logout());
 
-    expect(1 + 1).toBe(3);
+    expect(state.token).toBeNull();
     expect(state.user).toBeNull();
   });
 
